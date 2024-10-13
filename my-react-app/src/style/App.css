@@ -1,0 +1,122 @@
+.dis-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --fugazOne: "Fugaz One", sans-serif;
+  --permant: "Permanent Marker", cursive;
+  --roboto: "Roboto", sans-serif;
+}
+
+.part-1 {
+  width: 100%;
+  height: max-content;
+  padding: 10px;
+  font-family: var(--fugazOne);
+}
+
+.heading {
+  width: 100%;
+  height: max-content;
+  padding: 5px;
+  background-color: #f0f001;
+  text-align: center;
+  font-weight: 200;
+  border-radius: 50% 0;
+  color: #1d1c1c;
+}
+
+.inputForm {
+  max-width: 50vw;
+  min-width: 30vw;
+  height: max-content;
+  margin: 30px 0px;
+  padding: 10px;
+  row-gap: 10px;
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.label {
+  width: max-content;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px 20px 50px 60px;
+  background-color: #ee3535;
+  color: white;
+}
+
+.inputfield {
+  width: 100%;
+  max-height: 300px;
+  min-height: 150px;
+  outline: none;
+  padding: 10px;
+  font-family: var(--permant);
+  box-shadow: 5px 5px 20px black;
+  border: none;
+  border-radius: 20px;
+}
+
+.subBtn {
+  width: max-content;
+  height: max-content;
+  padding: 20px;
+  background-color: #fd2121;
+  color: #e4dfdf;
+  font-size: 1.5vw;
+  border: none;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 82%;
+  right: -20px;
+}
+
+.part-2,
+.box,
+.listContainer {
+  width: 100%;
+  height: max-content;
+  padding: 10px;
+  font-family: var(--roboto);
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+
+.listContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5vw 5vw;
+}
+
+.listContainer li {
+  list-style: none;
+  width: 20vw;
+  height: max-content;
+  padding: 20px;
+  word-wrap: normal;
+  overflow-y: auto;
+  background-color: #33f89c;
+  box-shadow: 5px 5px 20px black;
+  border-radius: 20px;
+  position: relative;
+}
+
+.delbtn {
+  display: block;
+  padding: 3px;
+  font-family: var(--permant);
+  font-style: italic;
+  color: #0000008a;
+  border: none;
+
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  background-color: transparent;
+}
