@@ -1,4 +1,5 @@
 import React from "react";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 export default function Li(props) {
   let noteValue = props.note;
@@ -14,7 +15,7 @@ export default function Li(props) {
         }}
         className="delbtn"
       >
-        delete...
+        <DeleteIcon />
       </button>
     </li>
   );

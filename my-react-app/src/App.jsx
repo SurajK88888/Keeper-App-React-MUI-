@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Heading from "./components/Heading";
 import Form from "./components/InputArea/Form";
 import Output from "./components/OutputArea/OutputList";
-
 import "./style/App.css";
 
 function App() {
   const [note, setNote] = useState({ title: "", content: "" });
   const [notesList, setNotesList] = useState([]);
 
+  const [isExpand, setIsExpand] = useState(false);
 
   function handleChange(event) {
     let [name, value] = [event.target.name, event.target.value];
@@ -43,7 +43,11 @@ function App() {
     console.log("deletion done..");
   }
 
-  
+  function handleIsExpand() {
+    setIsExpand(() => {
+      return true;
+    });
+  }
 
   return (
     <div>
@@ -53,8 +57,10 @@ function App() {
           labelStatement="INPUT NOTE HERE"
           btnName="Add"
           note={note}
+          isExpand={isExpand}
           handleChange={handleChange}
           handleClick={handleClick}
+          handleIsExpand={handleIsExpand}
         />
       </div>
       <div className="part-2">

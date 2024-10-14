@@ -46,8 +46,19 @@
   padding: 20px;
   margin-top: 10px;
   border-radius: 10px 20px 50px 60px;
-  background-color: #ee3535;
-  color: white;
+  background-color: #f0f001;
+  color: #1d1c1c;
+}
+
+.titleInput {
+  width: 100%;
+  padding: 10px;
+  font-family: var(--roboto);
+
+  outline: none;
+  box-shadow: 5px 5px 20px black;
+  border: none;
+  border-radius: 20px;
 }
 
 .inputfield {
@@ -66,15 +77,19 @@
   width: max-content;
   height: max-content;
   padding: 20px;
-  background-color: #fd2121;
+  background-color: #fd2121 !important;
   color: #e4dfdf;
   font-size: 1.5vw;
   border: none;
   border-radius: 50%;
 
-  position: absolute;
+  position: absolute !important;
   top: 82%;
   right: -20px;
+}
+
+.subBtn:hover {
+  background-color: #f0f001 !important;
 }
 
 .part-2,

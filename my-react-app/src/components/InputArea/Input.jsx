@@ -9,6 +9,7 @@ export default function Input(props) {
       placeholder="Title..."
       value={props.title}
       onChange={props.handleChange}
+      onClick={props.handleIsExpand}
     />
   );
 }

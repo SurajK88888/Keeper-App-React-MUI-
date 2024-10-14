@@ -1,8 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Wendy+One&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 
 * {
   margin: 0;
@@ -21,4 +20,7 @@ body {
   min-height: 100vh;
   padding: 10px;
   background-color: #fdfdfd;
+  /* background-color: #5c008a; */
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
