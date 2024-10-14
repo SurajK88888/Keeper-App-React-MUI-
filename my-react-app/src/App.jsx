@@ -13,7 +13,6 @@ function App() {
     setNote((previous) => {
       return { ...previous, [name]: value };
     });
-    console.log(note);
     event.preventDefault();
   }
 
@@ -21,8 +20,16 @@ function App() {
     setNotesList((previous) => {
       return [...previous, note];
     });
-    console.log(...notesList);
+
+    handleAfterSubmitDone();
+
     event.preventDefault();
+  }
+
+  function handleAfterSubmitDone() {
+    setNote(() => {
+      return { title: "", content: "" };
+    });
   }
 
   function handleDeleteNote(id) {
