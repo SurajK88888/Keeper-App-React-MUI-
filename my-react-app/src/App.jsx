@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import Heading from "./components/Heading";
 import Form from "./components/InputArea/Form";
 import Output from "./components/OutputArea/OutputList";
+
 import "./style/App.css";
 
 function App() {
   const [note, setNote] = useState({ title: "", content: "" });
   const [notesList, setNotesList] = useState([]);
+
 
   function handleChange(event) {
     let [name, value] = [event.target.name, event.target.value];
@@ -40,6 +42,8 @@ function App() {
     });
     console.log("deletion done..");
   }
+
+  
 
   return (
     <div>
